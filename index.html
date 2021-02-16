@@ -59,7 +59,7 @@
 					{name:"Societe Generale", link:"http://www.particuliers.societegenerale.fr/", icon:"images/l_soge.png"}]}
 				,
 					{name:"travel", icon:"images/world91.png",items:[
-					{name:"trainline", link:"https://www.trainline.fr", icon:"images/trainline.png"},
+					{link:"https://www.trainline.fr", icon:"images/trainline.png"},
 					{name:"envibus", link:"http://www.envibus.fr", icon:"images/l_envibus.jpeg"},
 					{name:"fidelite sncf", link:"http://www.sncf.com", icon:"images/l_sncf.jpeg"},
 					{name:"geolocalisation des trains", link:"http://www.sncf.com/fr/geolocalisation?data-map-zoom=6&data-map-livemap-unmatched=true"},
@@ -107,7 +107,11 @@
                         if (bookmarks.categories[category].items[item].hasOwnProperty('icon')) {
                             var img$ = $('<img/>');
                             img$.attr("src",bookmarks.categories[category].items[item].icon);
-                            img$.attr("width",32);
+							if (bookmarks.categories[category].items[item].hasOwnProperty('name')) {
+								img$.attr("width",32);
+							} else {
+								img$.attr("width",124);
+							}
                             item$.append(img$);
                         }
                         item$.append(bookmarks.categories[category].items[item].name)
