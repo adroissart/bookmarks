@@ -25,30 +25,25 @@
 					{name:"news", icon:"images/newspaper1.png",items:[
 					{name:"feedly", link:"http://www.feedly.com", icon:"images/l_feedly.svg"},
 					{name:"le monde", link:"http://www.lemonde.fr", icon:"images/l_lemonde.png"},
-					{name:"pocket", link:"http://www.getpocket.com", icon:"images/l_pocket.jpeg"}]}
+					{name:"pocket", link:"http://www.getpocket.com", icon:"images/l_pocket.jpeg"},
+					{link:"http://covidtracker.fr", icon:"images/covidtracker.svg"},
+					{name:"l'equipe", link:"http://www.lequipe.com", icon:"images/l_lequipe.jpeg"},
+					{name:"behance", link:"http://www.behance.net", icon:"images/l_behance.png"},
+					{name:"site of the day", link:"http://www.awwwards.com/awards-of-the-day"},]}
 				,
 					{name:"arts", icon:"images/paint41.png",items:[
 					{name:"spotify", link:"http://www.spotify.com", icon:"images/l_spotify.svg"},
-					{name:"behance", link:"http://www.behance.net", icon:"images/l_behance.png"},
-					{name:"dribbble", link:"http://www.dribbble.com", icon:"images/l_dribbble.png"},
-					{name:"site of the day", link:"http://www.awwwards.com/awards-of-the-day"},
+					{name:"netflix", link:"http://www.netflix.com"},
 					{name:"allocine", link:"http://www.allocine.fr", icon:"images/l_allocine.jpeg"},
 				    {name:"goodreads", link:"http://www.goodreads.com", icon:"images/goodreads.png"},
 					{name:"folomi", link:"http://folomi.free.fr",icon:"images/l_folomi.jpg"},
-					{name:"Free Stock Photo", link:"http://www.pexels.com/photo/glasses-of-rose-wine-6290/"},
-					{name:"Typewolf Typography", link:"http://www.typewolf.com/"},
 					{name:"Marmiton", link:"http://www.marmiton.org/", icon:"images/l_marmiton.png"}]}
 				,
-					{name:"sports", icon:"images/weightlifter3.png",items:[
-					{name:"l'equipe", link:"http://www.lequipe.com", icon:"images/l_lequipe.jpeg"},
+					{name:"sports", icon:"images/weightlifter3.png",items:[	
 					{name:"bwf", link:"http://bwf.tournamentsoftware.com", icon:"images/l_bwf.jpeg"},
-					{name:"stade francais", link:"http://www.stade.fr", icon:"images/l_sf.jpeg"},
-					{name:"men's fitness", link:"http://www.mensfitness.com", icon:"images/l_mensfitness.png"},
-					{name:"badmania", link:"http://www.badmania.fr", icon:"images/l_badmania.png"},
 					{name:"atp", link:"http://www.atpworldtour.com", icon:"images/l_atp.jpeg"},
 					{name:"jefit", link:"http://www.jefit.com", icon:"images/l_jefit.jpeg"},
 					{name:"runkeeper", link:"http://runkeeper.com/", icon:"images/l_runkeeper.png"},
-					{name:"gregory capra", link:"http://gregory-capra.blogspot.fr/"},
 					{name:"randoxygene", link:"http://www.randoxygene.org/index.php"},
 					{name:"BC Antibes", link:"http://bcantibes.fr",icon:"images/l_bca.jpg"},
 					{name:"Badiste", link:"http://badiste.fr/",icon:"images/l_badiste.jpg"}]}
@@ -61,13 +56,13 @@
 					{name:"travel", icon:"images/world91.png",items:[
 					{link:"https://www.trainline.fr", icon:"images/trainline.png"},
 					{name:"envibus", link:"http://www.envibus.fr", icon:"images/l_envibus.jpeg"},
-					{name:"fidelite sncf", link:"http://www.sncf.com", icon:"images/l_sncf.jpeg"},
+					{name:"sncf", link:"http://www.sncf.com", icon:"images/l_sncf.jpeg"},
 					{name:"geolocalisation des trains", link:"http://www.sncf.com/fr/geolocalisation?data-map-zoom=6&data-map-livemap-unmatched=true"},
 					{name:"INFOROUTES06", link:"http://www.inforoutes06.fr/fr/", icon:"images/l_inforoute06.png"}]}
 				,
 					{name:"learn", icon:"images/school84.png",items:[
-					{name:"edx", link:"http://www.edx.org", icon:"images/edx.svg"},
-					{name:"coursera", link:"http://www.coursera.com", icon:"images/coursera.svg"},
+					{link:"http://www.edx.org", icon:"images/edx.svg"},
+					{link:"http://www.coursera.com", icon:"images/coursera.svg"},
 					{name:"github", link:"http://www.github.com/", icon:"images/github.svg"},
 					{name:"algo complexity", link:"http://bigocheatsheet.com/"},
 					{name:"topcoder", link:"http://www.topcoder.com/"},
@@ -110,7 +105,7 @@
 							if (bookmarks.categories[category].items[item].hasOwnProperty('name')) {
 								img$.attr("width",32);
 							} else {
-								img$.attr("width",124);
+								img$.attr("width",112);
 							}
                             item$.append(img$);
                         }
