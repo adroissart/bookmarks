@@ -124,9 +124,9 @@
 						var img$ = $('<img/>');
 						img$.attr("src", bookmarks.categories[category].items[item].icon);
 						if (bookmarks.categories[category].items[item].hasOwnProperty('name')) {
-							img$.attr("width", 32);
+							img$.attr("height", 32);
 						} else {
-							img$.attr("width", "100%");
+							img$.attr("height", 32);
 						}
 						item$.append(img$);
 					}
